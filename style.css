@@ -39,13 +39,14 @@ header{
 }
 
 
-    .logo {
-        font-size: clamp(0.5rem, 5vw, 4rem); /* Responsive: min 1rem, max 2rem */
-        font-weight: 800;
-        cursor: pointer;
-        color: #40c2da;
-        transition: color 0.4s ease;
-      }
+.logo {
+    font-size: clamp(0.5rem, 5vw, 4rem); /* Responsive: min 1rem, max 2rem */
+    font-weight: 800;
+    cursor: pointer;
+    color: #40c2da;
+    transition: 0.3s ease;
+    
+    }
       
 
 
@@ -184,7 +185,11 @@ span{
     
       
     .logo {
-          font-size: 1.5rem;
+        font-size: 2rem;
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
     }
       
     
@@ -236,7 +241,7 @@ span{
     }
 
     #menu-icon {
-        font-size: 3rem;
+        font-size: 2rem;
         color: #40c2da;
         display: none;
         cursor: pointer;
@@ -248,23 +253,26 @@ span{
         #menu-icon {
             display: block;
             position: absolute;
-            top: 2rem;
-            right: 2rem;
+            top: 1rem;
+            right: 1rem;
         }
     
         nav {
             position: absolute;
-            top: 7rem;
-            right: 2rem;
-            background-color: rgb(8, 32, 43);
-            width: 60%;
+            top: 5rem;
+            right: 1rem;
+            background-color: rgba(255, 255, 255, 0.1); /* semi-transparent */
+            backdrop-filter: blur(10px);               /* this adds the blur */
+            -webkit-backdrop-filter: blur(10px);       /* Safari support */
+            width: 50%;
             display: none;
             flex-direction: column;
             padding: 1rem;
-            border-left: 3px solid #40c2da;
-            border-bottom: 3px solid #40c2da;
-            border-bottom-left-radius: 2rem;
+            border-left: 2px solid #40c2da;
+            border-bottom: 2px solid #40c2da;
+            border-bottom-left-radius: 1rem;
             border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+           
         }
     
         nav.active {
