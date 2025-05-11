@@ -1,4 +1,102 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+
+
+.rim-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.pedal {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+}
+
+.rim-container {
+  position: relative;
+  width: 400px;
+  height: 350px;
+}
+
+.rim {
+  width: 100%;
+  height: auto;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+/* Place labels around rim but show only the one on left horizontal */
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(calc(var(--i) * 60deg)) translateX(140px) rotate(calc(var(--i) * -60deg));
+  transform-origin: center;
+  opacity: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.label.visible {
+  opacity: 1;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(3rem, 10vw, 5rem);
+    height: clamp(3rem, 10vw, 5rem);
+    background-color: transparent;
+    border: 0.2rem solid #40c2da;
+    font-size: clamp(1.2rem, 4vw, 2rem);  /* Auto-resizing font */
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #40c2da;
+}
+
+
+.social-icons a:hover{
+    color: #ffffff;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #40c2da;
+    box-shadow: 0 0 25px #40c2da;
+    }
+
+    FOOTER p{
+    text-align: center;
+    padding-bottom: 0px;
+    font-size: clamp(1rem, 10vw 4rem);
+    color: #ffffff;
+    background-color: #000000;
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .rim-container {
+    width: 200px;
+    height: 200px;
+  }
+  .label {
+    transform: rotate(calc(var(--i) * 60deg)) translateX(-140px) rotate(calc(var(--i) * -60deg));
+    font-size: 1rem;
+  }
+  .pedal {
+    width: 45px;
+  }
+}
 
 *{ 
     margin: 0;
@@ -20,8 +118,8 @@ body{
     overflow-x: hidden;
     background-color: black;
     color: aliceblue;
-    margin-bottom: 50px;
-}
+
+} 
 
 header{
     margin-top: 20px;
@@ -50,14 +148,21 @@ header{
     
     }
       
-
-
-
 .logo:hover{
      transform:scale(1.1);
 }
 
 
+
+
+
+    #menu-icon {
+        font-size: 2rem;
+        color: #40c2da;
+        display: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
 
 section{
     min-height: 100vh;
@@ -73,132 +178,22 @@ section{
     background-color: black;
 }
 
-.home .home-content h1{
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.3;
+    
 
-}
-
-span{
-    color: #40c2da;
-    }
-
- .home-content h3{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-
-     }
-
-.home-content p{
-    font-size:1.6rem;
-
-    }
-
-
-.home-img{
-    border-radius:40%;
-
-}
-
-.home-img img{
-    position: relative;
-    width: 28vw;
-    border-radius:40%;
-    box-shadow: 0 10px 25px rgba(28, 160, 160, 0.79);
-    cursor: pointer;
-    transition: 0.3s ease;
-
-    }
-
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
-    transform: scale(1,1) translatey(-12px);
-    }
-
-.social-icons a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: clamp(3rem, 10vw, 5rem);
-    height: clamp(3rem, 10vw, 5rem);
-    background-color: transparent;
-    border: 0.2rem solid #40c2da;
-    font-size: clamp(1.2rem, 4vw, 2rem);  /* Auto-resizing font */
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: #40c2da;
-}
-
-
-.social-icons a:hover{
-    color: #ffffff;
-    transform: scale(1.3) translateY(-5px);
-    background-color: #40c2da;
-    box-shadow: 0 0 25px #40c2da;
-    }
-
-.btn {
-    display: inline-block;
-    padding: clamp(0.6rem, 1.5vw, 1rem) clamp(1.5rem, 4vw, 2.8rem);
-    background-color: black;
-    border-radius: 3rem;
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
-    color: #40c2da;
-    letter-spacing: clamp(0.1rem, 0.5vw, 0.3rem);
-    font-weight: 600;
-    border: 2px solid #40c2da;
-    transition: 0.3s ease;
-    cursor: pointer;
-    }
-
-
-.btn:hover{
-    transform: scale3d(1.03) ;
-    background-color: #40c2da;
-    color:black;
-    box-shadow: 0 0 24px #40c2da;
-    }
-
-.typing-text {
-    font-size:clamp(1.8rem 4vw 2rem);
-    font-weight: 600;
-    min-width: 280px;
-    color: #40c2da;
-  }
-  
-.cursor {
-    display: inline-block;
-    animation: blink 0.7s infinite;
-    font-weight: 700;
-    color: #40c2da;
-    }
-  
-
-FOOTER p{
-    text-align: center;
-    padding-bottom: 0px;
-    font-size: clamp(1rem, 10vw 4rem);
-    color: #ffffff;
-    background-color: #000000;
-    position:fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-}
- 
-
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-
+/* Responsive for mobile */
 @media (max-width: 768px) {
-    header {
+  .rim-container {
+    width: 200px;
+    height: 200px;
+  }
+  .label {
+    transform: rotate(calc(var(--i) * 60deg)) translateX(-100px) rotate(calc(var(--i) * -60deg));
+    font-size: 1rem;
+  }
+  .pedal {
+    width: 45px;
+  }
+  header {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -212,9 +207,6 @@ FOOTER p{
         left: 1rem;
     }
       
-    
-      
-    
     nav {
         display: none;
         flex-direction: column;
@@ -234,42 +226,10 @@ FOOTER p{
         margin: 1.5rem 0;
         font-size: 2rem;
     }
-    
-    .home {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-    }
-    
-    .home-img img {
-        width: 70vw;
-        margin-top: 1rem;
-    }
-    
-    .home .home-content h1 {
-        font-size: 2.2rem;
-    }
-    
-    .home-content h3 {
-        font-size: 2rem;
-    }
-    
-    .home-content p {
-        font-size: 1rem;
-        padding: 0 0.7rem;
-    }
-    }
+     
+}
 
-    #menu-icon {
-        font-size: 2rem;
-        color: #40c2da;
-        display: none;
-        cursor: pointer;
-        z-index: 1001;
-    }
-    
-    /* Responsive for small screens */
-    @media(max-width: 995px) {
+ @media(max-width: 995px) {
         #menu-icon {
             display: block;
             position: absolute;
@@ -348,4 +308,8 @@ FOOTER p{
         border-bottom: 0.3rem solid #40c2da;
         
     }
-  
+
+  .update p{ color: #ffffff;
+    font-size: large;
+
+    }
