@@ -1,67 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
-
-*{ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Montsarret'sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    border: none;
-    outline: none;
-    font-family:'Poppins', sans-serif;
-}
-
-html{
-    font-size: 62.5%;
 }
 
 body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
+    background-color:#b4b4b4;
     color: aliceblue;
     margin-bottom: 50px;
-}
-
-header{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(0 0 10px #000);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-
-.logo {
-    font-size: clamp(0.5rem, 5vw, 4rem); /* Responsive: min 1rem, max 2rem */
-    font-weight: 800;
-    cursor: pointer;
-    color: #40c2da;
-    transition: 0.3s ease;
-    border-radius: 10px;
-    
-    
-    }
-      
-
-
-
-.logo:hover{
-     transform:scale(1.1);
+   
 }
 
 
 
 section{
     min-height: 100vh;
-    padding: 5rem 9% 5rem;
+    padding: 4rem 9% 4rem;
 }
 
 
@@ -69,51 +29,51 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
-    background-color: black;
+    gap: 5rem;
+    background-color:#b4b4b4;
 }
 
 .home .home-content h1{
-    font-size: 6rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.3;
 
 }
 
 span{
-    color: #40c2da;
+    color: rgb(255, 215, 158)
     }
 
  .home-content h3{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
 
      }
 
 .home-content p{
-    font-size:1.6rem;
+    font-size:1rem;
 
     }
 
 
 .home-img{
-    border-radius:40%;
+    border-radius: 40%;
 
 }
 
 .home-img img{
     position: relative;
-    width: 28vw;
+    width: 24vw;
     border-radius:40%;
-    box-shadow: 0 10px 25px rgba(28, 160, 160, 0.79);
+    box-shadow: 0 10px 25px rgb(255, 215, 158, 0.79);
     cursor: pointer;
     transition: 0.3s ease;
 
     }
 
 .home-img img:hover{
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 500;
     transform: scale(1,1) translatey(-12px);
     }
@@ -122,35 +82,35 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: clamp(3rem, 10vw, 5rem);
-    height: clamp(3rem, 10vw, 5rem);
+    width: clamp(2rem, 10vw, 4rem);
+    height: clamp(2rem, 10vw, 4rem);
     background-color: transparent;
-    border: 0.2rem solid #40c2da;
-    font-size: clamp(1.2rem, 4vw, 2rem);  /* Auto-resizing font */
+    border: 0.2rem solid rgb(255, 243, 221);
+    font-size: clamp(1rem, 4vw, 1.5rem);  /* Auto-resizing font */
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #40c2da;
+    color:rgb(255, 255, 255);
 }
 
 
 .social-icons a:hover{
-    color: #ffffff;
+    color:rgb(255, 207, 118);
     transform: scale(1.3) translateY(-5px);
-    background-color: #40c2da;
-    box-shadow: 0 0 25px #40c2da;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #ffffff;
     }
 
 .btn {
     display: inline-block;
     padding: clamp(0.6rem, 1.5vw, 1rem) clamp(1.5rem, 4vw, 2.8rem);
-    background-color: black;
+    background-color: rgb(137, 137, 137);
     border-radius: 3rem;
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
-    color: #40c2da;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: #ffffff;
     letter-spacing: clamp(0.1rem, 0.5vw, 0.3rem);
     font-weight: 600;
-    border: 2px solid #40c2da;
+    border: 2px solid wheat;
     transition: 0.3s ease;
     cursor: pointer;
     }
@@ -158,9 +118,9 @@ span{
 
 .btn:hover{
     transform: scale3d(1.03) ;
-    background-color: #40c2da;
-    color:black;
-    box-shadow: 0 0 24px #40c2da;
+    background-color: #f3f3f3;
+    color:rgb(255, 204, 108);
+    box-shadow: 0 0 24px #ffe09e;
     }
 
 .typing-text {
@@ -174,20 +134,22 @@ span{
     display: inline-block;
     animation: blink 0.7s infinite;
     font-weight: 700;
-    color: #40c2da;
+    color: wheat;
     }
   
 
 FOOTER p{
     text-align: center;
     padding-bottom: 0px;
-    font-size: clamp(1rem, 10vw 4rem);
+    font-size: 1rem;
     color: #ffffff;
-    background-color: #000000;
+    background-color: transparent;
     position:fixed;
     left: 0;
     right: 0;
     bottom: 0;
+    border: none;
+    
 
 }
  
@@ -197,7 +159,7 @@ FOOTER p{
     50% { opacity: 0; }
   }
 
-@media (max-width: 768px) {
+@media (max-width: 995px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -210,29 +172,6 @@ FOOTER p{
         position: absolute;
         top: 1rem;
         left: 1rem;
-    }
-      
-    
-      
-    
-    nav {
-        display: none;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-    }
-    
-    nav.active {
-        display: flex;
-    }
-    
-    nav a {
-        margin: 1.5rem 0;
-        font-size: 2rem;
     }
     
     .home {
@@ -262,7 +201,7 @@ FOOTER p{
 
     #menu-icon {
         font-size: 2rem;
-        color: #40c2da;
+        color: wheat;
         display: none;
         cursor: pointer;
         z-index: 1001;
@@ -281,17 +220,18 @@ FOOTER p{
             position: absolute;
             top: 5rem;
             right: 1rem;
-            background-color: rgba(72, 171, 199, 0.495); /* semi-transparent */
+            background-color: rgba(254, 255, 204, 0.495); /* semi-transparent */
             backdrop-filter: blur(10px);               /* this adds the blur */
             -webkit-backdrop-filter: blur(10px);       /* Safari support */
-            width: 50%;
+            width: 40%;
             display: none;
             flex-direction: column;
             padding: 1rem;
-            border-left: 2px solid #a3d0d9;
-            border-bottom: 2px solid #63a9b6;
+            border-left: 2px solid #feffbe;
+            border-bottom: 2px solid #fffab4;
             border-bottom-left-radius: 1rem;
             border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+            transition: 0.3 ease;
            
         }
     
@@ -305,47 +245,76 @@ FOOTER p{
             font-size: 2rem;
         }
     }
-    nav a:hover, nav a.active {
-        padding: 1rem;
-        border-radius: 1rem;
-        border-bottom: 0.3rem solid #40c2da;
-    }
-    nav a:hover, nav a.active {
-        color: #40c2da;
-        border-bottom: 3px solid #40c2da;
-    }
-    nav a {
-        display: inline-block;
-        font-size: 1rem;
-        margin: 0.5rem;
-        transition: 0.3s ease-in-out;
+   header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5.7rem;
+    background-color: transparent;
+    /*filter: drop-shadow(0 0 10px #ffffff);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-decoration: none;
 
-    }
-    nav a {
-        font-size: 2rem;
-        color: rgb(255, 255, 255);
-        margin-left: 4rem;
-        font-weight: 500;
-        transition: all 0.3 ease;
-        border-bottom: 3px solid transparent;
-    }
-    nav.active{
-        display:block;
-    }
+}
+
+
+.logo {
+    font-size: clamp(0.5rem, 5vw, 2rem); /* Responsive: min 1rem, max 2rem */
+    font-weight: 800;
+    cursor: pointer;
+    color: #1f1f1f;
+    transition: 0.3s ease;
+    border-radius: 8px;
+    text-decoration: none;
     
-    nav a{
-        display:inline-block ;
-        font-size: 2rem ;
-        margin: 1rem;
-        transition: 0.3s ease-in-out;
     
     }
+      
+
+
+
+.logo:hover{
+    transform:scale(1.1);
     
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 1rem;
-        border-bottom: 0.3rem solid #40c2da;
+    color:rgb(255, 207, 118);
+    transform: scale(1.3) translateY(-5px);
+    background-color: transparent;
+   
+    
+
+}
+
+nav a:hover, nav a.active {
+    padding: 1rem;
+    border-radius: 1rem;
+    border-bottom: 0.3rem solid wheat;
+    color: #4b4b4b;
+}
+    
+    
+nav a {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: all 0.3 ease;
+    border-bottom: 3px solid transparent;
+    display:inline-block;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    margin: 0.3rem;
+      
         
-    }
-  
+      
+}
+
+nav.active{
+    display:block;
+}
+   
+
+

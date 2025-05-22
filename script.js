@@ -32,4 +32,13 @@ const texts = [
   }
   
   document.addEventListener("DOMContentLoaded", type);
+
+    document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.getElementById("menu-icon");
+          const nav = document.getElementById("nav-menu");
+        
+          menuIcon.addEventListener("click", () => {
+            nav.classList.toggle("active");
+          });
+        });
   
