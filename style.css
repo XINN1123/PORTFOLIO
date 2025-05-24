@@ -124,7 +124,7 @@ span{
     }
 
 .typing-text {
-    font-size:clamp(1.8rem 4vw 2rem);
+    font-size:clamp(0.8rem 4vw 2rem);
     font-weight: 600;
     min-width: 280px;
     color: #40c2da;
