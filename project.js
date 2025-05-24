@@ -73,4 +73,3 @@ particleFields.forEach(particleField => {
     });
   });
 
-

@@ -150,7 +150,7 @@ h2{
 
 .item .img-box {
     position: absolute;
-    left:50%;
+    left:45%;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -294,7 +294,7 @@ h2{
 .footer {
     position: absolute;
     display: flex;
-    padding: 4px 10px;
+    padding: 1px 20px;
     border: none;
     z-index: 1;
     color:white;
@@ -303,11 +303,13 @@ h2{
     text-align: center;
     justify-content: center;
     bottom: 0%;
-    left: 47%;
+    left: 60%;
     
 }
 .footer h1{
     font-size: 0.8rem;
+    
+    
 }
 
 /*FOR ALL PAGES*/
@@ -379,3 +381,39 @@ nav.active{
     display:block;
 }
    
+.social-icons {
+  position:absolute;
+  display: flex;
+  top: 82%;
+  right:40%;
+
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(2rem, 10vw, 4rem);
+    height: clamp(2rem, 10vw, 4rem);
+    background-color: transparent;
+    border: 0.2rem solid rgb(255, 243, 221);
+    font-size: clamp(1rem, 4vw, 1.5rem);  /* Auto-resizing font */
+    border-radius: 0%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color:rgb(255, 255, 255);
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    
+   
+ 
+}
+
+
+.social-icons a:hover{
+    color:rgb(255, 207, 118);
+    transform: scale(1.3) translateY(-5px);
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #ffffff;
+    }

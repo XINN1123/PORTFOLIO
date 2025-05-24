@@ -25,7 +25,7 @@ body{
   align-items: center;
   gap: 8rem;
   padding: 5px 10px;
-  bottom: 40%;
+  bottom: 30%;
   right: 28%;
 
 }
@@ -72,10 +72,33 @@ body{
 .update{
   position: absolute;
   display: flex;
-  top: 80%;
-  left: 10%;
+  top: 70%;
+  left: 1%;
+  font-size: 1rem;
+  margin: 10px 20px;
 }
 
+.list {
+  position: absolute;
+  top: 35%;
+  left: 77%;
+  
+  background-color: transparent;
+  border-radius: 20px;
+  justify-content: center;
+  padding: 35px;
+
+  color: #ffffff;
+  font-weight: 400;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.list:hover{
+  transform: scale(1.1);
+  color: rgb(1, 47, 40);
+  background-color: aliceblue;
+  
+}
 
 
 
