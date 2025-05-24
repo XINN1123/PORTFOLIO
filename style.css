@@ -141,7 +141,7 @@ span{
 FOOTER p{
     text-align: center;
     padding-bottom: 0px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: #ffffff;
     background-color: transparent;
     position:fixed;
@@ -149,7 +149,6 @@ FOOTER p{
     right: 0;
     bottom: 0;
     border: none;
-    position: absolute;
     
 
 }
